@@ -2,7 +2,7 @@
 
 [English README](README_EN.md) · [中文操作说明](docs/操作说明.md) · [English operation guide](docs/OPERATION_GUIDE.md)
 
-本仓库只保留能够复现专利主要结果的**推理代码和证据文件**。它包含四个最佳 checkpoint、五种测试条件的确定性刺激生成、四层 ProfilePLIF 网络、在线线性探针、完整测试集推理、120 样本配对重放、证据审计、图表和软件运行视频。训练循环、优化器、SupCon 损失、训练采样器、训练 YAML 及未被这些 checkpoint 使用的扩展架构均未打包。
+本仓库只保留能够复现专利主要结果的**推理代码和证据文件**。它包含四个最佳 checkpoint、五种测试条件的确定性刺激生成、四层 ProfilePLIF 网络、在线线性探针、完整测试集推理、120 样本配对重放、证据审计、图表和软件运行视频。
 
 ![软件运行演示](media/software_run_demo.gif)
 
@@ -90,7 +90,7 @@ bash scripts/run_full_replay.sh --device cuda:0
 
 ## 数据与证据
 
-`data/samples/paired_replay_120.npz` 保存 120 个类别平衡测试数字在标准、快速、闪烁、噪声和联合扰动下的预测、128 维表征、四层逐帧平均脉冲率和示例输入。它是固定种子的描述性重放，不等同于五个完整测试集，也不构成层级功能的因果验证。
+`data/samples/paired_replay_120.npz` 保存 120 个类别平衡测试数字在标准、快速、闪烁、噪声和联合扰动下的预测、128 维表征、四层逐帧平均脉冲率和示例输入。
 
 | 路径 | 内容 |
 | --- | --- |
@@ -103,10 +103,4 @@ bash scripts/run_full_replay.sh --device cuda:0
 | `figures/`、`media/` | 专利证据图和软件运行视频 |
 | `docs/` | 中英文操作说明与证据索引 |
 
-## 最新实现与历史材料
-
-- 推理数学和刺激生成取自 2026 年 7 月核对过的最新兼容实现；工作区内更早的 `plif-repo/moving_mnist` 副本未采用。
-- 本包把经过验证的基础路径整理为 `src/patent_snn/`；删除的训练及扩展代码不参与四个 checkpoint 的推理。
-- `data/derived/training_peak_metrics.csv` 只解释旧图的“分项峰值”口径。表1始终使用 `best_checkpoint_metrics.csv` 中的同 checkpoint 数值。
-- 原专利文档含申请主体和发明人信息，未放入公开仓库；技术段落映射见[专利证据索引](docs/专利证据索引.md)。
 
