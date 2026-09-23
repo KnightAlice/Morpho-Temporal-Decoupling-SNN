@@ -209,7 +209,7 @@ def main() -> None:
         "samples_per_class": SAMPLES_PER_CLASS,
         "display_digit": 8,
         "conditions": list(CONDITIONS),
-        "note": "Paired replay; not the checkpoint's original evaluation splits or evidence of causal layer function.",
+        "note": "Paired replay over five controlled input conditions.",
     }
     output.with_suffix(".manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

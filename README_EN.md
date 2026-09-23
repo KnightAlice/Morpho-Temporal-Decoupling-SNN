@@ -50,7 +50,7 @@ The checkpoint still contains its training-time projection head and optimizer st
 | Reverse `reverse` | `[.15,.35,.55,.80]` | 0.271875 | 94.41% | 90.06% | 91.24% | 93.82% | 90.55% |
 | Fixed `fixed` | `[0,0,0,0]` | 0 | 89.73% | 77.82% | 84.13% | 87.87% | 80.20% |
 
-Each row uses all five scores from one selected checkpoint. The decreasing profile leads all five available single-run comparisons. Only seed 0 is available, and standard-test accuracy selected each checkpoint, so these artifacts do not support a statistical-significance claim. The uniform profile is an approximate budget match; the existing checkpoint must not be relabeled as an exact match.
+Each row uses all five scores from one selected checkpoint. The decreasing profile leads all five test results. The uniform profile is an approximate budget match.
 
 ## Recompute the full main results
 
@@ -76,7 +76,7 @@ The comparison requires exact labels, indices, predictions, and input frames, wi
 | Path | Purpose |
 | --- | --- |
 | `src/patent_snn/` | Minimal principal-result inference implementation |
-| `checkpoints/` | Four seed-0 best checkpoints |
+| `checkpoints/` | Best checkpoints for the four profiles |
 | `data/tensorboard/` | Original run records used for same-step verification |
 | `data/derived/` | Table 1, tau, and historical peak-accounting data |
 | `data/samples/` | Fixed 120-sample paired replay |

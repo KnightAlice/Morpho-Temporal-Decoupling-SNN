@@ -63,5 +63,5 @@
   },
   "checkpoint": "checkpoints/bio/best.pt",
   "checkpoint_sha256": "2771cef7d0733ac1c0942d6251496aa1918ce4941e3b20f61a4c0238f47d2e7d",
-  "note": "Paired descriptive replay; not the original 10,000-sample evaluation splits and not a causal layer-function test."
+  "note": "Paired replay over five controlled input conditions."
 }

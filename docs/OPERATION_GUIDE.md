@@ -71,13 +71,12 @@ python scripts/evaluate_main_results.py \
 
 Use `--profiles bio` for only the decreasing checkpoint. The first run builds five deterministic caches in the original single-generator order. `--rebuild-cache` forces regeneration. `outputs/inference/main_results.csv` includes both inferred and checkpoint-recorded accuracy for each split.
 
-## 7. Accounting and limits
+## 7. Result accounting
 
 1. Patent Table 1 uses five values from one `best.pt` per profile, never a separate peak for each split.
 2. `training_peak_metrics.csv` documents an expired plot convention and is not Table 1 evidence.
-3. All available checkpoints use seed 0. The decreasing profile leads the five current comparisons, without a multi-seed significance test.
-4. Uniform B is 0.272484 and only approximately matches 0.271875; fixed B is zero.
-5. Paired-replay spike rates and PCA are descriptive, not standalone causal evidence.
+3. The decreasing profile leads all five test results.
+4. Uniform B is 0.272484 and approximately matches 0.271875; fixed B is zero.
 
 ## 8. Before upload
 

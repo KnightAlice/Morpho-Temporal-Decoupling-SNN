@@ -51,8 +51,8 @@
     },
     {
       "path": "data/samples/paired_replay_120.manifest.json",
-      "bytes": 1299,
-      "sha256": "039c0116f93381b3a02d73196ae5ba07aaf830152029890856d30ecac462d12a"
+      "bytes": 1238,
+      "sha256": "3543fa15a164a6a5e3cd9854e577ab6da075407b0552a1586479f2a3247026ce"
     },
     {
       "path": "data/samples/paired_replay_120.npz",
@@ -151,8 +151,8 @@
     },
     {
       "path": "scripts/replay_checkpoint.py",
-      "bytes": 10131,
-      "sha256": "58e12889959166e2b0d08bae9760a151aa724cbe86c1dd475acaa78ba6ba0dff"
+      "bytes": 10083,
+      "sha256": "224040eb42f46b7e1f0e9a6fb90c6bc26e23b080c2115eae14ff9d0656b9d6b4"
     },
     {
       "path": "src/patent_snn/__init__.py",

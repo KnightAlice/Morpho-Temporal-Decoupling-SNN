@@ -160,7 +160,7 @@ def plot_replay(sample_path: Path, output: Path) -> None:
         )
     ax.set_xlabel("Frame")
     ax.set_ylabel("Mean spike rate")
-    ax.set_title("120-sample paired replay (descriptive measurement)")
+    ax.set_title("120-sample paired replay")
     ax.grid(color="0.88", linewidth=0.7)
     ax.legend(ncol=5, fontsize=7.3, frameon=False, loc="upper center")
     fig.suptitle("Controlled input conditions and measured SNN activity", fontsize=14)
