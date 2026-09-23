@@ -1,4 +1,4 @@
-# Morpho-Temporal Decoupling SNN（形态–时序解耦 SNN）
+# 层级多时间尺度脉冲神经网络
 
 [English README](README_EN.md) · [中文操作说明](docs/操作说明.md) · [English operation guide](docs/OPERATION_GUIDE.md)
 
@@ -110,8 +110,3 @@ bash scripts/run_full_replay.sh --device cuda:0
 - `data/derived/training_peak_metrics.csv` 只解释旧图的“分项峰值”口径。表1始终使用 `best_checkpoint_metrics.csv` 中的同 checkpoint 数值。
 - 原专利文档含申请主体和发明人信息，未放入公开仓库；技术段落映射见[专利证据索引](docs/专利证据索引.md)。
 
-## 变更记录
-
-- 2026-09-23：建立独立证据包并核对四组 checkpoint、事件记录和 120 样本重放。
-- 2026-09-23：按复现范围收缩为主要结果推理包；加入四配置完整评估入口，移除训练和未使用扩展架构，并更新中英文文档与哈希清单。
-- 2026-09-23：采用独立项目名称 `Morpho-Temporal-Decoupling-SNN`，用于新建专用 GitHub 仓库。
