@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.pt binary
+*.npz binary
+*.png binary
+*.gif binary
+*.mp4 binary
+events.out.tfevents.* binary

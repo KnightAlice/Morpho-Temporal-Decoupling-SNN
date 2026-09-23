@@ -1,0 +1,67 @@
+{
+  "file": "data/samples/paired_replay_120.npz",
+  "sha256": "8e8b97ba5d5944ad82a44d3243c844e55b912272de5811152d1bcd20f8dc8a6c",
+  "selection": "First 12 MNIST test digits per class before feature inspection.",
+  "conditions": [
+    "standard",
+    "fast",
+    "flicker",
+    "noise",
+    "combined"
+  ],
+  "arrays": {
+    "conditions": {
+      "shape": [
+        5
+      ],
+      "dtype": "<U8"
+    },
+    "labels": {
+      "shape": [
+        120
+      ],
+      "dtype": "int16"
+    },
+    "digit_indices": {
+      "shape": [
+        120
+      ],
+      "dtype": "int32"
+    },
+    "features": {
+      "shape": [
+        5,
+        120,
+        128
+      ],
+      "dtype": "float32"
+    },
+    "predictions": {
+      "shape": [
+        5,
+        120
+      ],
+      "dtype": "int16"
+    },
+    "response_mean": {
+      "shape": [
+        5,
+        4,
+        16
+      ],
+      "dtype": "float32"
+    },
+    "example_videos": {
+      "shape": [
+        5,
+        16,
+        64,
+        64
+      ],
+      "dtype": "float32"
+    }
+  },
+  "checkpoint": "checkpoints/bio/best.pt",
+  "checkpoint_sha256": "2771cef7d0733ac1c0942d6251496aa1918ce4941e3b20f61a4c0238f47d2e7d",
+  "note": "Paired descriptive replay; not the original 10,000-sample evaluation splits and not a causal layer-function test."
+}

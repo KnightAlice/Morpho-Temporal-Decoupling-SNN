@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "assembled_date": "2026-09-23",
+  "package_scope": "Inference-only reproduction of the patent principal results; training code intentionally excluded.",
+  "source_selection": "Inference mathematics and deterministic evaluation synthesis extracted from the newest verified compatible Moving-MNIST working tree updated in July 2026; older workspace checkout excluded.",
+  "architecture_constraint": "Only the four-layer profile_plif path instantiated by all four supplied checkpoints is packaged. Strict state-dict loading is the version gate.",
+  "packaged_source_files": [
+    {
+      "path": "src/patent_snn/__init__.py",
+      "bytes": 235,
+      "sha256": "4a3fc5d4c0949896e3c3ba9c137a4282dec48abb125d9d3a29a099424743f714"
+    },
+    {
+      "path": "src/patent_snn/model.py",
+      "bytes": 9362,
+      "sha256": "35bc631d6911f3261c90d236f5f6076e6bd5d54b548a26d50235fcdf752d764d"
+    },
+    {
+      "path": "src/patent_snn/checkpoint.py",
+      "bytes": 1957,
+      "sha256": "072e36abc165af4438b5bc21859b49bca237be04c60d88af7d8fb922f8954a66"
+    },
+    {
+      "path": "src/patent_snn/data.py",
+      "bytes": 10416,
+      "sha256": "85949be12d3ef722759c9d2d2afcb5465bbecf51b3559a76055f7ee39eb3a2c8"
+    }
+  ],
+  "verified_upstream_component_hashes": {
+    "profile_plif_source": "1ca7c325c1237cbc2099ebb37578a181adf19e9b9509fad3ed76b2130ceb52ae",
+    "four_layer_snn_source": "8766badbb549aece194afba2f3f3c4a616af604611de51d0a46a157207942c48",
+    "moving_mnist_source": "36f15b419f9451788ff6bc9736373a5a20362772d1f9686b8ee072056c4355e0"
+  },
+  "intentional_simplifications": [
+    "Removed training entry points, optimizers, SupCon loss, training sampler, training YAML files and cache-preparation tools.",
+    "Removed dendritic, tri-compartment, task-conditioned and other architectures absent from all four checkpoint model states.",
+    "Retained the checkpoint fc layer solely so the saved model state loads strictly; predictions use the saved 128-to-10 probe.",
+    "Read inference and evaluation settings from each checkpoint embedded cfg instead of duplicating training configuration files.",
+    "Reduced Moving-MNIST to deterministic evaluation and paired-replay generation; online training augmentation is absent."
+  ],
+  "equivalence_checks": {
+    "model": "Original and compact implementations produced exactly equal 128-D representations and mean spike rates for the same seeded 16-frame input.",
+    "stimulus_function": "Original and compact generators produced bit-identical videos for speed/flicker/noise/sparse-mask combinations.",
+    "evaluation_splits": "The first five samples of each of the five splits were bit-identical in videos and labels against the verified source generator.",
+    "paired_replay": "All 120 labels, indices, predictions and example videos matched exactly; two feature entries differed by one pooled boundary spike (max 1/256) and response mean max difference was 6.11e-6 on a repeated CUDA run."
+  },
+  "legacy_spikingjelly_commit": "73f94ab983d0167623015537f7d4460b064cfca1",
+  "checkpoint_scope": "Four SupCon seed-0 best checkpoints selected by standard-test accuracy; inference uses model plus online probe.",
+  "excluded_historical_material": [
+    "Older plif-repo/moving_mnist workspace copy",
+    "Ordinary cross-entropy runs",
+    "Ten-epoch last-membrane runs",
+    "Split-wise peak values as principal-result evidence"
+  ],
+  "reviewed_document": {
+    "filename": "神经形态时序SNN学习算法_技术核对修订稿.docx",
+    "sha256": "7545618d9600e14c48a2731202b3be6ca7a19041984de4e799a3a3fa9ad438a1",
+    "included_in_public_package": false,
+    "exclusion_reason": "Contains applicant and inventor information; paragraph mapping is supplied in docs."
+  }
+}

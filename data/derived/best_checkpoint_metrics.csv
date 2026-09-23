@@ -1,0 +1,5 @@
+profile,epoch_zero_based,epoch_one_based,train_mode,test_id,test_ood_speed,test_ood_noise,test_ood_flicker,test_combined_ood
+bio,61,62,supcon_probe,0.9681,0.9459,0.957,0.9584,0.9397
+equal,46,47,supcon_probe,0.952,0.9287,0.9414,0.9365,0.9184
+reverse,57,58,supcon_probe,0.9441,0.9006,0.9382,0.9124,0.9055
+fixed,68,69,supcon_probe,0.8973,0.7782,0.8787,0.8413,0.802

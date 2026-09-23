@@ -1,0 +1,7 @@
+.data/
+.venv/
+vendor/spikingjelly
+__pycache__/
+*.py[cod]
+outputs/*
+!outputs/.gitkeep

@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "generated_date": "2026-09-23",
+  "hash_algorithm": "SHA-256",
+  "scope": "Primary checkpoints and event records, derived numeric evidence, paired replay sample, and the inference-only implementation used to reproduce principal results.",
+  "files": [
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 3761,
+      "sha256": "d11457244aab33e9c9974d80239ff09282ab0e0d3a3f105d180ddd5c4d9b3358"
+    },
+    {
+      "path": "checkpoints/bio/best.pt",
+      "bytes": 1384370,
+      "sha256": "2771cef7d0733ac1c0942d6251496aa1918ce4941e3b20f61a4c0238f47d2e7d"
+    },
+    {
+      "path": "checkpoints/equal/best.pt",
+      "bytes": 1384370,
+      "sha256": "9f0ee8f5583c75e4d1ef70aead22577b012c707d231fe8505319c9784891c6d3"
+    },
+    {
+      "path": "checkpoints/fixed/best.pt",
+      "bytes": 1384370,
+      "sha256": "3f0f6e9a5db732641903c871c2676c0b1ebf449b043c0d8501d0e2cac9c2a725"
+    },
+    {
+      "path": "checkpoints/reverse/best.pt",
+      "bytes": 1384370,
+      "sha256": "d482819be014a5b0e9004925e531e3e4914f9f33c028d1568a0de54308fb55c4"
+    },
+    {
+      "path": "data/derived/best_checkpoint_metrics.csv",
+      "bytes": 362,
+      "sha256": "fca4dea9d3c3b1403d360e60d7c3d0edcb6ead14561c0c278f94e926eaab4e80"
+    },
+    {
+      "path": "data/derived/tau_channels.csv",
+      "bytes": 41263,
+      "sha256": "bc653f37acb7085cb3b33a02313d994d67fccac061d23c246e6c8bcb46a55647"
+    },
+    {
+      "path": "data/derived/tau_summary.csv",
+      "bytes": 2754,
+      "sha256": "2f987f355de898084e41151d960c13c3b7c4608dcbe43629978acbfb05e57123"
+    },
+    {
+      "path": "data/derived/training_peak_metrics.csv",
+      "bytes": 1055,
+      "sha256": "f154f38d3c1e95d5598423adb6c51cd00089bdd08da86f446355ccf6d0523cbc"
+    },
+    {
+      "path": "data/samples/paired_replay_120.manifest.json",
+      "bytes": 1299,
+      "sha256": "039c0116f93381b3a02d73196ae5ba07aaf830152029890856d30ecac462d12a"
+    },
+    {
+      "path": "data/samples/paired_replay_120.npz",
+      "bytes": 372286,
+      "sha256": "8e8b97ba5d5944ad82a44d3243c844e55b912272de5811152d1bcd20f8dc8a6c"
+    },
+    {
+      "path": "data/tensorboard/bio/events.out.tfevents.1777963007.ubuntu.607137.0",
+      "bytes": 16462,
+      "sha256": "25b0d8f85fdda4222bf04acdd2bc70433d41d2fd5acd42daea13e8c9e253c33a"
+    },
+    {
+      "path": "data/tensorboard/bio/events.out.tfevents.1777963733.ubuntu.617697.0",
+      "bytes": 20327,
+      "sha256": "c3e2f5568760af1a4256559546ec1593871083d332e9a9aeecbf32dea7705685"
+    },
+    {
+      "path": "data/tensorboard/bio/events.out.tfevents.1777964751.ubuntu.628650.0",
+      "bytes": 272124,
+      "sha256": "611e8a34db9ad3f5681a206e356b0e4a5df3ef92fc6737191ab26745b9ab0618"
+    },
+    {
+      "path": "data/tensorboard/bio/events.out.tfevents.1777974660.ubuntu.678005.0",
+      "bytes": 275688,
+      "sha256": "f5684099832f9f820ed3ed27f17d70fca3794cff5607d0adb6d9a0c75e1d8c9a"
+    },
+    {
+      "path": "data/tensorboard/equal/events.out.tfevents.1777963007.ubuntu.607136.0",
+      "bytes": 17704,
+      "sha256": "44f0fb083a818d33e6d2fe953fb226467a39ab3c4355cb42e400a98ae41fa55c"
+    },
+    {
+      "path": "data/tensorboard/equal/events.out.tfevents.1777963733.ubuntu.617696.0",
+      "bytes": 21715,
+      "sha256": "72fa4d05f8bb3f76a7d93b2755bcae29d7c576e827a20542fdafbacb2a9bc824"
+    },
+    {
+      "path": "data/tensorboard/equal/events.out.tfevents.1777964751.ubuntu.628649.0",
+      "bytes": 281650,
+      "sha256": "2beac5f167e56eb92870bffe31cbb7f524f705e015486172ec6bcd9d42a163c5"
+    },
+    {
+      "path": "data/tensorboard/equal/events.out.tfevents.1777974660.ubuntu.678004.0",
+      "bytes": 287412,
+      "sha256": "335b2279092d165c2aa70389caa1c1c4d2563d2647183afaccdb7f52a59d9e63"
+    },
+    {
+      "path": "data/tensorboard/fixed/events.out.tfevents.1777984536.ubuntu.775219.0",
+      "bytes": 184984,
+      "sha256": "0c9c725bdf3cfa4f7cf22e63aca7f37f99c416b8f067aa9fe130c7fdc8b9ad2f"
+    },
+    {
+      "path": "data/tensorboard/reverse/events.out.tfevents.1777963007.ubuntu.607134.0",
+      "bytes": 16192,
+      "sha256": "8aaf948156f890c60475b6609ddf3e8ece653b9811620b93f3bec2f10ccf1880"
+    },
+    {
+      "path": "data/tensorboard/reverse/events.out.tfevents.1777963733.ubuntu.617695.0",
+      "bytes": 19977,
+      "sha256": "c701a3b9fdc7a6cb884a5d8639ed105796987532601893df7c5734afcad4da00"
+    },
+    {
+      "path": "data/tensorboard/reverse/events.out.tfevents.1777964751.ubuntu.628648.0",
+      "bytes": 270558,
+      "sha256": "9845eb16dfa3548ea82f129e465b8145046042aee80486ac2cf106ebd9a1112e"
+    },
+    {
+      "path": "data/tensorboard/reverse/events.out.tfevents.1777974660.ubuntu.678003.0",
+      "bytes": 273160,
+      "sha256": "2f2c48a92e84d35f0b107135a996f952abfe4f179deb80ff5cf1f123cbd0e3b5"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 138,
+      "sha256": "68088bb30b545fe52fadb8220c781f25b77d50bb742bd5fc26e0aae6dcab424a"
+    },
+    {
+      "path": "scripts/audit_checkpoints.py",
+      "bytes": 11010,
+      "sha256": "88c81d5d14220e6839e162c682a7c61a32980af0b4dab88a656219b2ea680acc"
+    },
+    {
+      "path": "scripts/check_inference_runtime.py",
+      "bytes": 1560,
+      "sha256": "58c01d73a66f191813ca966189807e551d6b76aca045d93bcde3c9c87a0ce13f"
+    },
+    {
+      "path": "scripts/compare_replay.py",
+      "bytes": 1908,
+      "sha256": "cd7c0bb28be110fdd6d82bf69726bd6934c30a1e5364d56b10e34251186b5ddf"
+    },
+    {
+      "path": "scripts/evaluate_main_results.py",
+      "bytes": 5683,
+      "sha256": "7bfa739e5f44933fa06f83049412d1e8e375d5cb905e763f99e641088ab22461"
+    },
+    {
+      "path": "scripts/replay_checkpoint.py",
+      "bytes": 10131,
+      "sha256": "58e12889959166e2b0d08bae9760a151aa724cbe86c1dd475acaa78ba6ba0dff"
+    },
+    {
+      "path": "src/patent_snn/__init__.py",
+      "bytes": 235,
+      "sha256": "4a3fc5d4c0949896e3c3ba9c137a4282dec48abb125d9d3a29a099424743f714"
+    },
+    {
+      "path": "src/patent_snn/checkpoint.py",
+      "bytes": 1957,
+      "sha256": "072e36abc165af4438b5bc21859b49bca237be04c60d88af7d8fb922f8954a66"
+    },
+    {
+      "path": "src/patent_snn/data.py",
+      "bytes": 10416,
+      "sha256": "85949be12d3ef722759c9d2d2afcb5465bbecf51b3559a76055f7ee39eb3a2c8"
+    },
+    {
+      "path": "src/patent_snn/model.py",
+      "bytes": 9362,
+      "sha256": "35bc631d6911f3261c90d236f5f6076e6bd5d54b548a26d50235fcdf752d764d"
+    }
+  ]
+}
